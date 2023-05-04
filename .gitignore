@@ -1,0 +1,13 @@
+~*
+*~
+*.d
+*.o
+*.txt
+*.log
+.vscode
+build
+output
+riscv-gnu-toolchain
+compiler
+*.jou
+*.zip
