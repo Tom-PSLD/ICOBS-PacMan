@@ -34,7 +34,6 @@
 #include <types.h>
 #include <uart.h>
 #include <timer.h>
-
 // Printf-like function (does not support all formats...)
 #define myprintf(...)             print(UART1_Write, __VA_ARGS__)
 

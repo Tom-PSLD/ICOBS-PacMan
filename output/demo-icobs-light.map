@@ -1,0 +1,944 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-rand.o)
+                              build/src/main.c.o (rand)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-assert.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-rand.o) (__assert_func)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fprintf.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-assert.o) (fiprintf)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-rand.o) (_impure_ptr)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-malloc.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-rand.o) (malloc)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-malloc.o) (_free_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-malloc.o) (_malloc_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fprintf.o) (_vfprintf_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o) (_printf_i)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o) (__swbuf_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o) (__swsetup_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-abort.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-assert.o) (abort)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o) (_fflush_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o) (__sinit)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o) (__sfvwrite_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o) (_fwalk)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o) (__smakebuf_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o) (memchr)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memcpy-asm.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o) (memcpy)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memmove.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o) (memmove)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memset.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o) (memset)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o) (__malloc_lock)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o) (_realloc_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o) (errno)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-abort.o) (raise)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signalr.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o) (_kill_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o) (__sread)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o) (_write_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o) (_close_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o) (_fstat_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o) (_isatty_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o) (_lseek_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o) (_read_r)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+                              build/lib/misc/print.c.o (__udivdi3)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+                              build/lib/misc/print.c.o (__umoddi3)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o) (__clz_tab)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(close.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o) (_close)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(fstat.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o) (_fstat)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(getpid.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signalr.o) (_getpid)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(isatty.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o) (_isatty)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(kill.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signalr.o) (_kill)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(lseek.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o) (_lseek)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(read.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o) (_read)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(sbrk.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o) (_sbrk)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(write.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o) (_write)
+/home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(_exit.o)
+                              /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-abort.o) (_exit)
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x8 build/crt0.S.o
+ .data          0x0000000000000000        0x0 build/crt0.S.o
+ .bss           0x0000000000000000        0x0 build/crt0.S.o
+ .text          0x0000000000000000        0x0 build/lib/misc/print.c.o
+ .data          0x0000000000000000        0x0 build/lib/misc/print.c.o
+ .bss           0x0000000000000000        0x0 build/lib/misc/print.c.o
+ .text.print    0x0000000000000000       0x52 build/lib/misc/print.c.o
+ .text.vprint   0x0000000000000000      0x4f0 build/lib/misc/print.c.o
+ .rodata.vprint
+                0x0000000000000000       0x84 build/lib/misc/print.c.o
+ .comment       0x0000000000000000       0x13 build/lib/misc/print.c.o
+ .riscv.attributes
+                0x0000000000000000       0x26 build/lib/misc/print.c.o
+ .text          0x0000000000000000        0x0 build/lib/libarch/uart.c.o
+ .data          0x0000000000000000        0x0 build/lib/libarch/uart.c.o
+ .bss           0x0000000000000000        0x0 build/lib/libarch/uart.c.o
+ .sbss.UART1_RxLast
+                0x0000000000000000        0x4 build/lib/libarch/uart.c.o
+ .text.UART1_get_TxCount
+                0x0000000000000000       0x18 build/lib/libarch/uart.c.o
+ .text.UART1_Init
+                0x0000000000000000       0x9a build/lib/libarch/uart.c.o
+ .text.UART1_Clean
+                0x0000000000000000       0x6e build/lib/libarch/uart.c.o
+ .text.UART1_IsRxNotEmpty
+                0x0000000000000000       0x2e build/lib/libarch/uart.c.o
+ .text.UART1_Read
+                0x0000000000000000       0x98 build/lib/libarch/uart.c.o
+ .text.UART1_Write
+                0x0000000000000000       0x9e build/lib/libarch/uart.c.o
+ .text          0x0000000000000000        0x0 build/lib/libarch/timer.c.o
+ .data          0x0000000000000000        0x0 build/lib/libarch/timer.c.o
+ .bss           0x0000000000000000        0x0 build/lib/libarch/timer.c.o
+ .text.set_timer_ms
+                0x0000000000000000       0x96 build/lib/libarch/timer.c.o
+ .text.delay_ms
+                0x0000000000000000       0x74 build/lib/libarch/timer.c.o
+ .text          0x0000000000000000        0x0 build/src/main.c.o
+ .data          0x0000000000000000        0x0 build/src/main.c.o
+ .bss           0x0000000000000000        0x0 build/src/main.c.o
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-rand.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-rand.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-rand.o)
+ .text.srand    0x0000000000000000       0x80 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-rand.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-assert.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-assert.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-assert.o)
+ .text.__assert
+                0x0000000000000000       0x10 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-assert.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fprintf.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fprintf.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fprintf.o)
+ .text._fprintf_r
+                0x0000000000000000       0x20 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fprintf.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-malloc.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-malloc.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-malloc.o)
+ .text.free     0x0000000000000000       0x12 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-malloc.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ .text.__sprint_r
+                0x0000000000000000       0x28 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ .text.vfprintf
+                0x0000000000000000       0x16 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
+ .text.__swbuf  0x0000000000000000       0x14 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-abort.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-abort.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-abort.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+ .text.fflush   0x0000000000000000       0x2c /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .text.__fp_lock
+                0x0000000000000000        0x4 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .text.__fp_unlock
+                0x0000000000000000        0x4 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .text._cleanup
+                0x0000000000000000       0x10 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .text.__sfp_lock_acquire
+                0x0000000000000000        0x2 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .text.__sfp_lock_release
+                0x0000000000000000        0x2 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .text.__sinit_lock_acquire
+                0x0000000000000000        0x2 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .text.__sinit_lock_release
+                0x0000000000000000        0x2 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .text.__fp_lock_all
+                0x0000000000000000       0x18 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .text.__fp_unlock_all
+                0x0000000000000000       0x18 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
+ .text.__sfvwrite_r
+                0x0000000000000000      0x30c /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
+ .comment       0x0000000000000000       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
+ .riscv.attributes
+                0x0000000000000000       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
+ .text._fwalk   0x0000000000000000       0x62 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
+ .text          0x0000000000000000       0x16 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memcpy-asm.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memcpy-asm.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memcpy-asm.o)
+ .riscv.attributes
+                0x0000000000000000       0x24 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memcpy-asm.o)
+ .text          0x0000000000000000       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memmove.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memmove.o)
+ .riscv.attributes
+                0x0000000000000000       0x24 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memset.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
+ .text._realloc_r
+                0x0000000000000000       0x96 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
+ .comment       0x0000000000000000       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
+ .riscv.attributes
+                0x0000000000000000       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+ .text.cleanup_glue
+                0x0000000000000000       0x2c /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+ .text._reclaim_reent
+                0x0000000000000000      0x10a /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+ .text._init_signal_r
+                0x0000000000000000       0x3e /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+ .text._signal_r
+                0x0000000000000000       0x46 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+ .text.__sigtramp_r
+                0x0000000000000000       0x5a /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+ .text.signal   0x0000000000000000       0x14 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+ .text._init_signal
+                0x0000000000000000       0x10 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+ .text.__sigtramp
+                0x0000000000000000       0x12 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signalr.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signalr.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signalr.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+ .text.__seofread
+                0x0000000000000000        0x4 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
+ .text._malloc_usable_size_r
+                0x0000000000000000       0x14 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
+ .comment       0x0000000000000000       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
+ .riscv.attributes
+                0x0000000000000000       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
+ .text          0x0000000000000000      0x35e /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .text          0x0000000000000000      0x31e /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+ .text          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .rodata        0x0000000000000000      0x100 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .debug_info    0x0000000000000000       0xd8 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .debug_abbrev  0x0000000000000000       0x70 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .debug_aranges
+                0x0000000000000000       0x18 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .debug_line    0x0000000000000000       0x3f /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .debug_str     0x0000000000000000      0x196 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .debug_line_str
+                0x0000000000000000      0x144 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .comment       0x0000000000000000       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .riscv.attributes
+                0x0000000000000000       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(close.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(close.o)
+ .gnu.warning._close
+                0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(close.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(fstat.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(fstat.o)
+ .gnu.warning._fstat
+                0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(fstat.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(getpid.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(getpid.o)
+ .gnu.warning._getpid
+                0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(getpid.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(isatty.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(isatty.o)
+ .gnu.warning._isatty
+                0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(isatty.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(kill.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(kill.o)
+ .gnu.warning._kill
+                0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(kill.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(lseek.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(lseek.o)
+ .gnu.warning._lseek
+                0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(lseek.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(read.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(read.o)
+ .gnu.warning._read
+                0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(read.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(sbrk.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(sbrk.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(write.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(write.o)
+ .gnu.warning._write
+                0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(write.o)
+ .data          0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(_exit.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ROM              0x0000000010000000 0x0000000000010000 xr
+RAM              0x0000000010010000 0x0000000000010000 w
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/crt0.S.o
+LOAD build/lib/misc/print.c.o
+LOAD build/lib/libarch/uart.c.o
+LOAD build/lib/libarch/timer.c.o
+LOAD build/src/main.c.o
+START GROUP
+LOAD /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a
+LOAD /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a
+LOAD /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libm_nano.a
+LOAD /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a
+LOAD /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libsupc++.a
+END GROUP
+                0x0000000010000000                __ROM_BASE = 0x10000000
+                0x0000000000010000                __ROM_SIZE = 0x10000
+                0x0000000010010000                __RAM_BASE = 0x10010000
+                0x0000000000010000                __RAM_SIZE = 0x10000
+                0x0000000000002000                __STACK_SIZE = 0x2000
+                0x0000000000002000                __HEAP_SIZE = 0x2000
+
+.text           0x0000000010000000     0x2eec
+ *(.vectors)
+ .vectors       0x0000000010000000       0x8c build/crt0.S.o
+ *(.text)
+ .text          0x000000001000008c       0x10 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memset.o)
+                0x000000001000008c                memset
+ .text          0x000000001000009c       0x10 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(close.o)
+                0x000000001000009c                _close
+ .text          0x00000000100000ac       0x10 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(fstat.o)
+                0x00000000100000ac                _fstat
+ .text          0x00000000100000bc       0x10 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(getpid.o)
+                0x00000000100000bc                _getpid
+ .text          0x00000000100000cc       0x10 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(isatty.o)
+                0x00000000100000cc                _isatty
+ .text          0x00000000100000dc       0x10 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(kill.o)
+                0x00000000100000dc                _kill
+ .text          0x00000000100000ec       0x10 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(lseek.o)
+                0x00000000100000ec                _lseek
+ .text          0x00000000100000fc       0x10 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(read.o)
+                0x00000000100000fc                _read
+ .text          0x000000001000010c       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(sbrk.o)
+                0x000000001000010c                _sbrk
+ .text          0x0000000010000132       0x10 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(write.o)
+                0x0000000010000132                _write
+ .text          0x0000000010000142        0x2 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(_exit.o)
+                0x0000000010000142                _exit
+ *(.text.*)
+ .text.Reset_Handler
+                0x0000000010000144       0x62 build/crt0.S.o
+                0x0000000010000144                Reset_Handler
+ .text.Default_Handler
+                0x00000000100001a6        0x2 build/crt0.S.o
+                0x00000000100001a6                IRQ_08_Handler
+                0x00000000100001a6                IRQ_06_Handler
+                0x00000000100001a6                IRQ_11_Handler
+                0x00000000100001a6                IRQ_10_Handler
+                0x00000000100001a6                IRQ_07_Handler
+                0x00000000100001a6                IRQ_01_Handler
+                0x00000000100001a6                IRQ_13_Handler
+                0x00000000100001a6                IRQ_14_Handler
+                0x00000000100001a6                IRQ_02_Handler
+                0x00000000100001a6                Default_Handler
+                0x00000000100001a6                IRQ_05_Handler
+                0x00000000100001a6                IRQ_NMI_Handler
+                0x00000000100001a6                IRQ_09_Handler
+                0x00000000100001a6                IRQ_03_Handler
+                0x00000000100001a6                IRQ_12_Handler
+ .text.IRQ_04_Handler
+                0x00000000100001a8      0x170 build/lib/libarch/uart.c.o
+                0x00000000100001a8                IRQ_04_Handler
+ .text.IRQ_00_Handler
+                0x0000000010000318       0x8e build/lib/libarch/timer.c.o
+                0x0000000010000318                IRQ_00_Handler
+ .text.delay_loop
+                0x00000000100003a6       0x30 build/src/main.c.o
+                0x00000000100003a6                delay_loop
+ .text.is_walkable
+                0x00000000100003d6       0x66 build/src/main.c.o
+                0x00000000100003d6                is_walkable
+ .text.check_collision
+                0x000000001000043c      0x15a build/src/main.c.o
+                0x000000001000043c                check_collision
+ .text.update_score_display
+                0x0000000010000596       0x9a build/src/main.c.o
+                0x0000000010000596                update_score_display
+ .text.init_game_logic
+                0x0000000010000630      0x112 build/src/main.c.o
+                0x0000000010000630                init_game_logic
+ .text.random_spawn
+                0x0000000010000742       0xcc build/src/main.c.o
+                0x0000000010000742                random_spawn
+ .text.reset_round
+                0x000000001000080e      0x152 build/src/main.c.o
+                0x000000001000080e                reset_round
+ .text.main     0x0000000010000960      0x770 build/src/main.c.o
+                0x0000000010000960                main
+ .text.rand     0x00000000100010d0       0xa2 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-rand.o)
+                0x00000000100010d0                rand
+ .text.__assert_func
+                0x0000000010001172       0x40 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-assert.o)
+                0x0000000010001172                __assert_func
+ .text.fprintf  0x00000000100011b2       0x28 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fprintf.o)
+                0x00000000100011b2                fprintf
+                0x00000000100011b2                fiprintf
+ .text.malloc   0x00000000100011da        0xc /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-malloc.o)
+                0x00000000100011da                malloc
+ .text._free_r  0x00000000100011e6       0xa6 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
+                0x00000000100011e6                _free_r
+ .text._malloc_r
+                0x000000001000128c       0xe2 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+                0x000000001000128c                _malloc_r
+ .text.__sfputc_r
+                0x000000001000136e       0x28 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ .text.__sfputs_r
+                0x0000000010001396       0x42 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000010001396                __sfputs_r
+ .text._vfprintf_r
+                0x00000000100013d8      0x2a4 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x00000000100013d8                _vfiprintf_r
+                0x00000000100013d8                _vfprintf_r
+ .text._printf_common
+                0x000000001000167c      0x110 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000000001000167c                _printf_common
+ .text._printf_i
+                0x000000001000178c      0x262 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000000001000178c                _printf_i
+ .text._sbrk_r  0x00000000100019ee       0x30 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
+                0x00000000100019ee                _sbrk_r
+ .text.__swbuf_r
+                0x0000000010001a1e       0xc0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
+                0x0000000010001a1e                __swbuf_r
+ .text.__swsetup_r
+                0x0000000010001ade      0x10c /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
+                0x0000000010001ade                __swsetup_r
+ .text.abort    0x0000000010001bea        0xe /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-abort.o)
+                0x0000000010001bea                abort
+ .text.__sflush_r
+                0x0000000010001bf8      0x148 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+                0x0000000010001bf8                __sflush_r
+ .text._fflush_r
+                0x0000000010001d40       0x64 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+                0x0000000010001d40                _fflush_r
+ .text.std      0x0000000010001da4       0x6a /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .text._cleanup_r
+                0x0000000010001e0e        0xa /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000010001e0e                _cleanup_r
+ .text.__sfmoreglue
+                0x0000000010001e18       0x48 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000010001e18                __sfmoreglue
+ .text.__sinit  0x0000000010001e60       0x6a /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000010001e60                __sinit
+ .text.__sfp    0x0000000010001eca       0x9e /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000010001eca                __sfp
+ .text._fwalk_reent
+                0x0000000010001f68       0x6a /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
+                0x0000000010001f68                _fwalk_reent
+ .text.__swhatbuf_r
+                0x0000000010001fd2       0x5c /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
+                0x0000000010001fd2                __swhatbuf_r
+ .text.__smakebuf_r
+                0x000000001000202e       0x9e /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
+                0x000000001000202e                __smakebuf_r
+ .text.memchr   0x00000000100020cc       0x1a /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
+                0x00000000100020cc                memchr
+ .text.__malloc_lock
+                0x00000000100020e6        0x2 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
+                0x00000000100020e6                __malloc_lock
+ .text.__malloc_unlock
+                0x00000000100020e8        0x2 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
+                0x00000000100020e8                __malloc_unlock
+ .text._raise_r
+                0x00000000100020ea       0x62 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+                0x00000000100020ea                _raise_r
+ .text.raise    0x000000001000214c        0xc /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+                0x000000001000214c                raise
+ .text._kill_r  0x0000000010002158       0x32 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signalr.o)
+                0x0000000010002158                _kill_r
+ .text._getpid_r
+                0x000000001000218a        0x4 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signalr.o)
+                0x000000001000218a                _getpid_r
+ .text.__sread  0x000000001000218e       0x30 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+                0x000000001000218e                __sread
+ .text.__swrite
+                0x00000000100021be       0x4e /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+                0x00000000100021be                __swrite
+ .text.__sseek  0x000000001000220c       0x36 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+                0x000000001000220c                __sseek
+ .text.__sclose
+                0x0000000010002242        0x6 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+                0x0000000010002242                __sclose
+ .text._write_r
+                0x0000000010002248       0x34 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
+                0x0000000010002248                _write_r
+ .text._close_r
+                0x000000001000227c       0x30 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
+                0x000000001000227c                _close_r
+ .text._fstat_r
+                0x00000000100022ac       0x32 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
+                0x00000000100022ac                _fstat_r
+ .text._isatty_r
+                0x00000000100022de       0x30 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
+                0x00000000100022de                _isatty_r
+ .text._lseek_r
+                0x000000001000230e       0x34 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
+                0x000000001000230e                _lseek_r
+ .text._read_r  0x0000000010002342       0x34 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
+                0x0000000010002342                _read_r
+ *(.init)
+ *(.fini)
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+ *(.lit)
+ *(.shdata)
+ *(.rodata)
+ *fill*         0x0000000010002376        0x2 
+ .rodata        0x0000000010002378       0x20 build/src/main.c.o
+ *(.rodata.*)
+ .rodata.map_grid
+                0x0000000010002398      0x4b0 build/src/main.c.o
+                0x0000000010002398                map_grid
+ .rodata.dots_init
+                0x0000000010002848      0x4b0 build/src/main.c.o
+                0x0000000010002848                dots_init
+ .rodata.srand.str1.4
+                0x0000000010002cf8       0x70 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-rand.o)
+ .rodata.__assert_func.str1.4
+                0x0000000010002d68       0x3f /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-assert.o)
+                                         0x43 (size before relaxing)
+ *fill*         0x0000000010002da7        0x1 
+ .rodata._vfprintf_r.str1.4
+                0x0000000010002da8       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ *fill*         0x0000000010002dbb        0x1 
+ .rodata._printf_i.str1.4
+                0x0000000010002dbc       0x25 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ *fill*         0x0000000010002de1        0x3 
+ .rodata._printf_i
+                0x0000000010002de4       0x58 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .rodata.__sf_fake_stderr
+                0x0000000010002e3c       0x20 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000010002e3c                __sf_fake_stderr
+ .rodata.__sf_fake_stdin
+                0x0000000010002e5c       0x20 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000010002e5c                __sf_fake_stdin
+ .rodata.__sf_fake_stdout
+                0x0000000010002e7c       0x20 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000010002e7c                __sf_fake_stdout
+ *(.eh_frame*)
+ .eh_frame      0x0000000010002e9c       0x28 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .eh_frame      0x0000000010002ec4       0x28 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+ *(.shbss)
+
+.srodata._global_impure_ptr
+                0x0000000010002eec        0x4
+ .srodata._global_impure_ptr
+                0x0000000010002eec        0x4 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+                0x0000000010002eec                _global_impure_ptr
+
+.rela.dyn       0x0000000010002ef0        0x0
+ .rela.text.Reset_Handler
+                0x0000000010002ef0        0x0 build/crt0.S.o
+ .rela.vectors  0x0000000010002ef0        0x0 build/crt0.S.o
+ .rela.text._vfprintf_r
+                0x0000000010002ef0        0x0 build/crt0.S.o
+ .rela.text     0x0000000010002ef0        0x0 build/crt0.S.o
+                0x0000000010002ef0                . = ALIGN (0x4)
+                0x0000000010002ef0                _text_end = .
+
+.data           0x0000000010010000       0x64 load address 0x0000000010002ef0
+                0x0000000010010000                _data_start = .
+ *(vtable)
+ *(.data)
+ *(.data.*)
+ .data.impure_data
+                0x0000000010010000       0x60 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+ *(.sdata)
+ *(.sdata.*)
+ .sdata._impure_ptr
+                0x0000000010010060        0x4 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+                0x0000000010010060                _impure_ptr
+                0x0000000010010064                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+                0x0000000010010064                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+                [!provide]                        PROVIDE (__init_array_end = .)
+                0x0000000010010064                . = ALIGN (0x4)
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_NAME(.fini_array.*))
+ *(.fini_array)
+                [!provide]                        PROVIDE (__fini_array_end = .)
+ *(.jcr*)
+                0x0000000010010064                . = ALIGN (0x4)
+                0x0000000010010064                _data_end = .
+
+.bss            0x0000000010010064      0x5c4 load address 0x0000000010002f54
+                0x0000000010010064                . = ALIGN (0x4)
+                0x0000000010010064                _bss_start = .
+ *(.bss)
+ *(.bss.*)
+ .bss.UART1_TxBuffer
+                0x0000000010010064       0x80 build/lib/libarch/uart.c.o
+ .bss.UART1_RxBuffer
+                0x00000000100100e4       0x20 build/lib/libarch/uart.c.o
+ .bss.dots_status
+                0x0000000010010104      0x4b0 build/src/main.c.o
+                0x0000000010010104                dots_status
+ .bss.pacman    0x00000000100105b4       0x10 build/src/main.c.o
+                0x00000000100105b4                pacman
+ .bss.ghost2    0x00000000100105c4       0x10 build/src/main.c.o
+                0x00000000100105c4                ghost2
+ .bss.ghost3    0x00000000100105d4       0x10 build/src/main.c.o
+                0x00000000100105d4                ghost3
+ .bss.ghost6    0x00000000100105e4       0x10 build/src/main.c.o
+                0x00000000100105e4                ghost6
+ *(.sbss)
+ .sbss          0x00000000100105f4        0x4 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(sbrk.o)
+ *(.sbss.*)
+ .sbss.UART1_TxFirst
+                0x00000000100105f8        0x4 build/lib/libarch/uart.c.o
+ .sbss.UART1_TxLast
+                0x00000000100105fc        0x4 build/lib/libarch/uart.c.o
+ .sbss.UART1_TxCount
+                0x0000000010010600        0x4 build/lib/libarch/uart.c.o
+ .sbss.UART1_RxFirst
+                0x0000000010010604        0x4 build/lib/libarch/uart.c.o
+ .sbss.UART1_RxCount
+                0x0000000010010608        0x4 build/lib/libarch/uart.c.o
+ .sbss.g_callback
+                0x000000001001060c        0x4 build/lib/libarch/timer.c.o
+ .sbss.g_callback_code
+                0x0000000010010610        0x4 build/lib/libarch/timer.c.o
+ .sbss.total_dots
+                0x0000000010010614        0x4 build/src/main.c.o
+                0x0000000010010614                total_dots
+ .sbss.score    0x0000000010010618        0x4 build/src/main.c.o
+                0x0000000010010618                score
+ .sbss.__malloc_free_list
+                0x000000001001061c        0x4 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+                0x000000001001061c                __malloc_free_list
+ .sbss.__malloc_sbrk_start
+                0x0000000010010620        0x4 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000010010620                __malloc_sbrk_start
+ .sbss.errno    0x0000000010010624        0x4 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+                0x0000000010010624                errno
+ *(COMMON)
+                0x0000000010010628                . = ALIGN (0x4)
+                0x0000000010010628                _bss_end = .
+
+.heap           0x0000000010010628     0x2000
+                0x0000000010010628                . = ALIGN (0x8)
+                0x0000000010010628                __end__ = .
+                0x0000000010010628                _end = .
+                0x0000000010010628                PROVIDE (end = .)
+                0x0000000010012628                . = (. + __HEAP_SIZE)
+ *fill*         0x0000000010010628     0x2000 
+                0x0000000010012628                . = ALIGN (0x8)
+                0x0000000010012628                __HeapLimit = .
+
+.stack          0x000000001001e000     0x2000
+                0x000000001001e000                . = ALIGN (0x8)
+                0x000000001001e000                __StackLimit = .
+                0x0000000010020000                . = (. + __STACK_SIZE)
+ *fill*         0x000000001001e000     0x2000 
+                0x0000000010020000                . = ALIGN (0x8)
+                0x0000000010020000                __StackTop = .
+                0x0000000010020000                PROVIDE (__stack = __StackTop)
+OUTPUT(output/demo-icobs-light.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x0000000000000000       0x2a
+ .riscv.attributes
+                0x0000000000000000       0x24 build/crt0.S.o
+ .riscv.attributes
+                0x0000000000000024       0x2a build/lib/libarch/uart.c.o
+ .riscv.attributes
+                0x000000000000004e       0x2a build/lib/libarch/timer.c.o
+ .riscv.attributes
+                0x0000000000000078       0x26 build/src/main.c.o
+ .riscv.attributes
+                0x000000000000009e       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-rand.o)
+ .riscv.attributes
+                0x00000000000000c4       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-assert.o)
+ .riscv.attributes
+                0x00000000000000ea       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fprintf.o)
+ .riscv.attributes
+                0x0000000000000110       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+ .riscv.attributes
+                0x0000000000000136       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-malloc.o)
+ .riscv.attributes
+                0x000000000000015c       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
+ .riscv.attributes
+                0x0000000000000182       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+ .riscv.attributes
+                0x00000000000001a8       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ .riscv.attributes
+                0x00000000000001ce       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .riscv.attributes
+                0x00000000000001f4       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
+ .riscv.attributes
+                0x000000000000021a       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
+ .riscv.attributes
+                0x0000000000000240       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
+ .riscv.attributes
+                0x0000000000000266       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-abort.o)
+ .riscv.attributes
+                0x000000000000028c       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+ .riscv.attributes
+                0x00000000000002b2       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .riscv.attributes
+                0x00000000000002d8       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
+ .riscv.attributes
+                0x00000000000002fe       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
+ .riscv.attributes
+                0x0000000000000324       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
+ .riscv.attributes
+                0x000000000000034a       0x24 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memset.o)
+ .riscv.attributes
+                0x000000000000036e       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
+ .riscv.attributes
+                0x0000000000000394       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+ .riscv.attributes
+                0x00000000000003ba       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+ .riscv.attributes
+                0x00000000000003e0       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signalr.o)
+ .riscv.attributes
+                0x0000000000000406       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+ .riscv.attributes
+                0x000000000000042c       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
+ .riscv.attributes
+                0x0000000000000452       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
+ .riscv.attributes
+                0x0000000000000478       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
+ .riscv.attributes
+                0x000000000000049e       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
+ .riscv.attributes
+                0x00000000000004c4       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
+ .riscv.attributes
+                0x00000000000004ea       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
+ .riscv.attributes
+                0x0000000000000510       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .riscv.attributes
+                0x0000000000000536       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+ .riscv.attributes
+                0x000000000000055c       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(close.o)
+ .riscv.attributes
+                0x0000000000000582       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(fstat.o)
+ .riscv.attributes
+                0x00000000000005a8       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(getpid.o)
+ .riscv.attributes
+                0x00000000000005ce       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(isatty.o)
+ .riscv.attributes
+                0x00000000000005f4       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(kill.o)
+ .riscv.attributes
+                0x000000000000061a       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(lseek.o)
+ .riscv.attributes
+                0x0000000000000640       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(read.o)
+ .riscv.attributes
+                0x0000000000000666       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(sbrk.o)
+ .riscv.attributes
+                0x000000000000068c       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(write.o)
+ .riscv.attributes
+                0x00000000000006b2       0x26 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(_exit.o)
+
+.comment        0x0000000000000000       0x12
+ .comment       0x0000000000000000       0x12 build/lib/libarch/uart.c.o
+                                         0x13 (size before relaxing)
+ .comment       0x0000000000000012       0x13 build/lib/libarch/timer.c.o
+ .comment       0x0000000000000012       0x13 build/src/main.c.o
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-rand.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-assert.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fprintf.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-malloc.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-abort.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signal.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-signalr.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(close.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(fstat.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(getpid.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(isatty.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(kill.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(lseek.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(read.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(sbrk.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(write.o)
+ .comment       0x0000000000000012       0x13 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/../../../../riscv32-unknown-elf/lib/libnosys.a(_exit.o)
+
+.debug_info     0x0000000000000000      0xf16
+ .debug_info    0x0000000000000000      0x761 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .debug_info    0x0000000000000761      0x7b5 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+
+.debug_abbrev   0x0000000000000000      0x361
+ .debug_abbrev  0x0000000000000000      0x1a6 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x00000000000001a6      0x1bb /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+
+.debug_loclists
+                0x0000000000000000     0x1303
+ .debug_loclists
+                0x0000000000000000      0xa99 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .debug_loclists
+                0x0000000000000a99      0x86a /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+
+.debug_aranges  0x0000000000000000       0x40
+ .debug_aranges
+                0x0000000000000000       0x20 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x0000000000000020       0x20 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+
+.debug_rnglists
+                0x0000000000000000      0x1e2
+ .debug_rnglists
+                0x0000000000000000      0x111 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .debug_rnglists
+                0x0000000000000111       0xd1 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+
+.debug_line     0x0000000000000000      0xec8
+ .debug_line    0x0000000000000000      0x727 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .debug_line    0x0000000000000727      0x7a1 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+
+.debug_str      0x0000000000000000      0x1f3
+ .debug_str     0x0000000000000000      0x1e9 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+                                        0x249 (size before relaxing)
+ .debug_str     0x00000000000001e9        0xa /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+                                        0x249 (size before relaxing)
+
+.debug_line_str
+                0x0000000000000000       0xb0
+ .debug_line_str
+                0x0000000000000000       0xb0 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+                                        0x144 (size before relaxing)
+ .debug_line_str
+                0x00000000000000b0      0x144 /home/penfornis/worspace/riscv-compiler/bin/../lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)

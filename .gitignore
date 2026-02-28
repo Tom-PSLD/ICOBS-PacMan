@@ -1,13 +1,31 @@
-~*
+# Build artifacts
+software/demo-icobs-light-project/build/
+software/demo-icobs-light-project/output/*.elf
+software/demo-icobs-light-project/output/*.bin
+software/demo-icobs-light-project/output/*.map
+software/demo-icobs-light-project/output/*.coe
+
+# Keep the hex output
+!output/*.hex
+
+# Vivado generated files
+hardware/vhdl/.Xil/
+hardware/vhdl/*.cache/
+hardware/vhdl/*.hw/
+hardware/vhdl/*.ip_user_files/
+hardware/vhdl/*.runs/
+hardware/vhdl/*.sim/
+hardware/vhdl/*.srcs/
+hardware/vhdl/vivado*.jou
+hardware/vhdl/vivado*.log
+hardware/vhdl/vivado_pid*.str
+hardware/vhdl/*.xpr.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
 *~
-*.d
-*.o
-*.txt
-*.log
-.vscode
-build
-output
-riscv-gnu-toolchain
-compiler
-*.jou
-*.zip
+
+# Large binary files (optional: track with Git LFS instead)
+# *.bit

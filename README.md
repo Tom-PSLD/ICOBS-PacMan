@@ -1,95 +1,219 @@
-# Project structure
+# 🕹️ ICOBS Pac-Man — FPGA Implementation
 
-- **lib**:
-    - **arch**: System architecture definitions
-    - **ibex**: Ibex core definitions
-    - **libarch**: Peripherals drivers
-    - **misc**: Miscellaneous
-- **src**: Demo application source files
-- **crt0.S**: Startup file
-- **link.ld**: Linker script
-- **hex2txt.py**: Python script to convert the hex file to other formats such as .txt, .coe or even .vhd
-- **install_riscv_toolchain.sh**: RISC-V toolchain installation script
-- **makefile**: makefile
+> A Pac-Man game running on a RISC-V soft-core processor (IBEX) on FPGA, with a custom VGA controller written in VHDL and the game logic written in C.
 
-# Add source
+**ENSIBS — ICOBS Project | Tom Penfornis**
 
-- **First step**: create .h or .c file
-- **Second step**: update INC and SRC variable in the makefile
+---
 
-# Makefile commands
+## 📋 Table of Contents
 
-To compile all the sources in the build directory, generate output files in the output directory and generate .coe and .txt files in the main directory, use the following command:
+- [Overview](#overview)
+- [Hardware Architecture](#hardware-architecture)
+- [Repository Structure](#repository-structure)
+- [Getting Started](#getting-started)
+- [Game Description](#game-description)
+- [Software / Hardware Interface](#software--hardware-interface)
+- [Deliverables](#deliverables)
 
-```bash
-$ make all
+---
+
+## Overview
+
+This project is the final deliverable of the **ICOBS** (Intégration de Composants et Objets sur Silicium) lab course. The goal was to design and implement a complete embedded system from scratch on an FPGA board, featuring:
+
+- A **RISC-V IBEX** soft-core processor
+- A custom **VGA controller** peripheral (AHB-Lite bus slave)
+- A **Pac-Man** video game written in C, running on the soft-core
+
+The game displays on a 640×480 VGA screen and supports:
+- Player-controlled Pac-Man (via push buttons)
+- 3 autonomous ghost enemies with maze navigation logic
+- Dot collection and score display on 7-segment displays
+- Collision detection (walls, ghosts)
+- Win/Game Over screen management
+
+---
+
+## Hardware Architecture
+
+The hardware is implemented on the FPGA using Vivado. Key components:
+
+```
+┌──────────────────────────────────────────────────────┐
+│                     FPGA                            │
+│                                                      │
+│  ┌──────────┐   AHB-Lite Bus   ┌──────────────────┐ │
+│  │  IBEX    │◄────────────────►│  AHBlite VGA     │ │
+│  │ RISC-V   │                  │  Peripheral      │ │
+│  │ Core     │◄────────────────►│  (ahblite_vga)   │ │
+│  └──────────┘   AHB-Lite Bus   └────────┬─────────┘ │
+│       │                                 │            │
+│  ┌────┴──────┐                ┌─────────▼─────────┐ │
+│  │  GPIO     │                │  VGA Controller   │ │
+│  │ (Buttons/ │                │  640x480 @60Hz    │ │
+│  │ Switches) │                │  + Sprite ROMs    │ │
+│  └───────────┘                └─────────┬─────────┘ │
+│                                         │            │
+│                               ┌─────────▼─────────┐ │
+│                               │  7-Seg Display    │ │
+│                               │  (Score)          │ │
+│                               └───────────────────┘ │
+└──────────────────────────────────────────────────────┘
+                                         │
+                                    VGA Monitor
 ```
 
-To generate a dump file in the output directory:
+### VGA Peripheral Registers
 
-```bash
-$ make dump
+The VGA peripheral is memory-mapped and controlled via these registers (accessible from C via the `VGA_t` struct):
+
+| Register           | Description                          |
+|--------------------|--------------------------------------|
+| `background_color` | Background / flash color control     |
+| `X1_pos`, `Y1_pos` | Pac-Man position                     |
+| `X2_pos`, `Y2_pos` | Ghost 1 (Blinky) position            |
+| `X3_pos`, `Y3_pos` | Ghost 2 (Pinky) position             |
+| `X4_pos`, `Y4_pos` | Win screen sprite position           |
+| `X5_pos`, `Y5_pos` | Game Over sprite position            |
+| `X6_pos`, `Y6_pos` | Ghost 3 (Clyde) position             |
+
+---
+
+## Repository Structure
+
+```
+ICOBS-PacMan/
+│
+├── README.md
+│
+├── hardware/
+│   └── vhdl/
+│       ├── ahblite_vga.vhd          # AHB-Lite VGA peripheral (main custom IP)
+│       ├── VGA_640_x_480.vhd        # VGA timing controller (640x480 @ 60Hz)
+│       ├── VGA_Basic_ROM.vhd        # Sprite ROM (Pac-Man, ghosts, etc.)
+│       ├── VGA_Generic_Package.vhd  # Constants and types package
+│       └── ICOBS_light_PROJECT_DIR.xpr  # Vivado project file
+│
+├── software/
+│   └── demo-icobs-light-project/
+│       ├── src/
+│       │   ├── main.c               # Game logic (Pac-Man)
+│       │   └── system.h             # System configuration header
+│       ├── lib/
+│       │   ├── arch/                # Architecture-specific headers (GPIO, VGA, UART...)
+│       │   ├── libarch/             # Timer and UART drivers
+│       │   └── misc/                # Print, types utilities
+│       ├── makefile                 # Build system (RISC-V cross-compiler)
+│       ├── link.ld                  # Linker script
+│       └── crt0.S                   # Startup assembly
+│
+├── output/
+│   ├── ICOBS_light_TOP.bit          # FPGA bitstream (includes bootloader)
+│   └── demo-icobs-light.hex         # Compiled game executable
+│
+└── docs/
+    └── rapport.pdf                  # Project report (hardware diagram, flowchart)
 ```
 
-Finally to clean the make and remove the build directory:
+---
+
+## Getting Started
+
+### Prerequisites
+
+- **Vivado** (for FPGA synthesis and bitstream generation)
+- **RISC-V GCC toolchain** (`riscv32-unknown-elf-gcc`)
+- Compatible FPGA board (Nexys A7 / Basys 3 or equivalent)
+- VGA monitor
+
+### 1. Program the FPGA
+
+Load the bitstream onto the FPGA using Vivado or `openFPGALoader`:
 
 ```bash
-$ make clean
+# Via Vivado Hardware Manager
+# Open hardware manager → Auto Connect → Program Device
+# Select: output/ICOBS_light_TOP.bit
 ```
 
-# RISC-V Toolchain installation
+### 2. Build the Software
 
-## Installation with dedicated script
-
-Once the project cloned, to install the toolchain, you can go in the project repository and run the installation script (install_riscv_toolchain.sh) with the following command:
 ```bash
-$ source install_riscv_toolchain.sh
-```
-This script will download, configure and build the toolchain in the project folder (./compiler). It is possible to copy/paste the script somewhere else to install the toolchain outside the project repository.
-Where the script is located (LOC_SCRIPT), the toochain build will be in the compiler folder, to finish the installation, add ${LOC_SCRIPT}/compiler/bin to your PATH:
-```bash
-$ export PATH=${LOC_SCRIPT}/compiler/bin:$PATH
+cd software/demo-icobs-light-project
+make
+# Output: output/demo-icobs-light.hex
 ```
 
-## Manual installation
+> To install the RISC-V toolchain: `bash install_riscv_toolchain.sh`
 
-To manually install the toolchain, the first step is to download the package lists from the repositories and update them to get information on the newest versions of packages and their dependencies
-```bash
-$ sudo apt-get update
+### 3. Load the Game
+
+Use the bootloader (UART) to upload the `.hex` file to the board, then start the game.
+
+---
+
+## Game Description
+
+The game is a Pac-Man clone adapted to the hardware constraints of the FPGA system.
+
+### Controls (Push Buttons)
+
+| Button | Action      |
+|--------|-------------|
+| P0     | Move Up     |
+| P3     | Move Down   |
+| P1     | Move Left   |
+| P2     | Move Right  |
+
+### Rules
+
+- Navigate Pac-Man through a 20×15 tile maze
+- Collect all dots to **win**
+- Avoid 3 ghosts — touching one triggers **Game Over** (red flash + restart)
+- Score is displayed in real-time on the **7-segment displays**
+- The tunnel at row 7 wraps around (left ↔ right teleport)
+
+### Ghost AI
+
+Each ghost navigates the maze autonomously using a grid-aligned movement system:
+- At each tile intersection, valid directions are computed (no walls)
+- A random direction is chosen, **avoiding U-turns** when alternatives exist
+- Fallback to U-turn only in dead ends
+
+---
+
+## Software / Hardware Interface
+
+The link between software and hardware is done through **memory-mapped I/O** on the AHB-Lite bus.
+
+For example, to move Pac-Man to position (x=128, y=96):
+
+```c
+#define VGA_BASE 0x...          // Base address of VGA peripheral
+#define VGA_PTR  ((VGA_t *) VGA_BASE)
+
+VGA_PTR->X1_pos = 128;
+VGA_PTR->Y1_pos = 96;
 ```
 
-Then you can install all the dependencies:
-```bash
-$ sudo apt-get install make git gcc autoconf automake autotools-dev curl python3 libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev nodejs
-```
+The VHDL peripheral (`ahblite_vga.vhd`) exposes these registers on the AHB-Lite bus. A write to `X1_pos` from the C code triggers a bus transaction that updates the sprite position register in the FPGA, which is then read by the VGA controller on every frame to render the sprite at the correct pixel coordinates.
 
-Use the following command to clone the RISC-V toolchain repository:
-```bash
-$ git clone https://github.com/riscv/riscv-gnu-toolchain
-```
+---
 
-Then, go in the riscv-gnu-toolchain repository:
-```bash
-$ cd riscv-gnu-toolchain
-```
+## Deliverables
 
-To ensure that you are using the same version of the toolchain that this project was tested with, run the following command:
-```bash
-$ git checkout 663b3852189acae826d99237cef45e629dfd6471
-```
+| File | Description |
+|------|-------------|
+| `output/ICOBS_light_TOP.bit` | FPGA bitstream with bootloader |
+| `output/demo-icobs-light.hex` | Game executable |
+| `hardware/vhdl/*.vhd` | All custom/modified VHDL sources |
+| `software/demo-icobs-light-project/src/` | C source code |
+| `docs/rapport.pdf` | Project report |
 
-You can create a variable that containt the installation path of the compiler:
-```bash
-$ INSTALL_ROOT = /your/installation/path
-```
+---
 
-Finally, you can configure and build the Newlib cross-compiler:
-```bash
-$ ./configure --prefix=${INSTALL_ROOT} --disable-linux --disable-gdb --disable-multilib --with-arch=rv32imc --with-abi=ilp32 --with-cmodel=medlow
-$ make -j8
-```
+## Author
 
-To use the toolchain, add /your/installation/path/bin to your PATH:
-```bash
-$ export PATH=/your/installation/path/bin:$PATH
-```
+**Tom Penfornis** — ENSIBS  
+ICOBS Project — 2025/2026
