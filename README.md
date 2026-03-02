@@ -1,87 +1,154 @@
 # 🕹️ ICOBS Pac-Man — FPGA Implementation
 
-> A Pac-Man game running on a RISC-V soft-core processor (IBEX) on FPGA, with a custom VGA controller written in VHDL and the game logic written in C.
+> Reproduction du jeu classique "Pac-Man" sur architecture FPGA, avec un processeur RISC-V (IBEX) et un contrôleur VGA personnalisé en VHDL.
 
-**ENSIBS — ICOBS Project | Tom Penfornis**
-
----
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Hardware Architecture](#hardware-architecture)
-- [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
-- [Game Description](#game-description)
-- [Software / Hardware Interface](#software--hardware-interface)
-- [Deliverables](#deliverables)
+**Polytech Montpellier — Synthèse des Systèmes Numériques | Tom Penfornis | SE 2024-2027**
 
 ---
 
-## Overview
+## 📋 Table des matières
 
-This project is the final deliverable of the **ICOBS** (Intégration de Composants et Objets sur Silicium) lab course. The goal was to design and implement a complete embedded system from scratch on an FPGA board, featuring:
-
-- A **RISC-V IBEX** soft-core processor
-- A custom **VGA controller** peripheral (AHB-Lite bus slave)
-- A **Pac-Man** video game written in C, running on the soft-core
-
-The game displays on a 640×480 VGA screen and supports:
-- Player-controlled Pac-Man (via push buttons)
-- 3 autonomous ghost enemies with maze navigation logic
-- Dot collection and score display on 7-segment displays
-- Collision detection (walls, ghosts)
-- Win/Game Over screen management
+- [Présentation](#présentation)
+- [Architecture Matérielle](#architecture-matérielle)
+- [Architecture Logicielle](#architecture-logicielle)
+- [Lien Logiciel / Matériel](#lien-logiciel--matériel)
+- [Structure du repo](#structure-du-repo)
+- [Utilisation](#utilisation)
 
 ---
 
-## Hardware Architecture
+## Présentation
 
-The hardware is implemented on the FPGA using Vivado. Key components:
+Ce projet est le livrable final du cours **Synthèse des Systèmes Numériques** à Polytech Montpellier. L'objectif était de concevoir et implémenter un système embarqué complet sur FPGA :
 
+- Un processeur **RISC-V IBEX** soft-core
+- Un périphérique **contrôleur VGA** personnalisé (esclave AHB-Lite)
+- Un jeu **Pac-Man** écrit en C, exécuté sur le soft-core
+
+Le jeu s'affiche sur un écran VGA 640×480 et supporte :
+- Déplacement du Pac-Man via boutons poussoirs
+- 3 fantômes ennemis autonomes avec navigation dans le labyrinthe
+- Collecte de gommes avec affichage du score sur les 7-segments
+- Détection des collisions (murs, fantômes)
+- Écran de victoire et Game Over
+
+---
+
+## Architecture Matérielle
+
+Le matériel est implémenté sur FPGA avec Vivado. Voici l'architecture globale :
 ```
-┌──────────────────────────────────────────────────────┐
-│                     FPGA                            │
-│                                                      │
-│  ┌──────────┐   AHB-Lite Bus   ┌──────────────────┐ │
-│  │  IBEX    │◄────────────────►│  AHBlite VGA     │ │
-│  │ RISC-V   │                  │  Peripheral      │ │
-│  │ Core     │◄────────────────►│  (ahblite_vga)   │ │
-│  └──────────┘   AHB-Lite Bus   └────────┬─────────┘ │
-│       │                                 │            │
-│  ┌────┴──────┐                ┌─────────▼─────────┐ │
-│  │  GPIO     │                │  VGA Controller   │ │
-│  │ (Buttons/ │                │  640x480 @60Hz    │ │
-│  │ Switches) │                │  + Sprite ROMs    │ │
-│  └───────────┘                └─────────┬─────────┘ │
-│                                         │            │
-│                               ┌─────────▼─────────┐ │
-│                               │  7-Seg Display    │ │
-│                               │  (Score)          │ │
-│                               └───────────────────┘ │
-└──────────────────────────────────────────────────────┘
-                                         │
-                                    VGA Monitor
-```
+┌──────────────────────────────────────────────────────────────────┐
+│                            FPGA (Basys3)                         │
+│                                                                  │
+│   ┌─────────────┐     Bus OBI      ┌──────────────────────────┐  │
+│   │  IBEX Core  │◄────────────────►│     MCU Interconnect     │  │
+│   │  (RISC-V)   │                  │    Crossbar (OBI→AHB)    │  │
+│   └─────────────┘                  └───────────┬──────────────┘  │
+│                                                │                 │
+│                         ┌──────────────────────┼──────────────┐  │
+│                   Bus AHB-Lite                 │              │  │
+│            ┌────────────┴──────┐   ┌───────────┴──────┐       │  │
+│            │   GPIO (A/B/C)    │   │   AHBlite VGA    │       │  │
+│            │  ┌─────────────┐  │   │ (ahblite_vga.vhd)│       │  │
+│            │  │  Boutons P0 │  │   └───────────┬──────┘       │  │
+│            │  │  Boutons P1 │  │               │              │  │
+│            │  │  Boutons P2 │  │   ┌───────────▼──────────┐   │  │
+│            │  │  Boutons P3 │  │   │    VGA Controller    │   │  │
+│            │  └─────────────┘  │   │    640x480 @ 60Hz    │   │  │
+│            └───────────────────┘   │                      │   │  │
+│                                    │  ┌────────────────┐  │   │  │
+│   ┌───────────────────────────┐    │  │  Sprite ROMs   │  │   │  │
+│   │     7-Seg Display (x4)    │    │  │  (x6 PROMs)    │  │   │  │
+│   │  Score BCD sur 4 chiffres │    │  │  Pac-Man       │  │   │  │
+│   └───────────────────────────┘    │  │  Fantômes x3   │  │   │  │
+│                                    │  │  Win / GameOver│  │   │  │
+│                                    │  └────────────────┘  │   │  │
+│                                    └───────────┬──────────┘   │  │
+└────────────────────────────────────────────────┼──────────────┘  │
+                                                 │
+                                      ┌──────────▼──────────┐
+                                      │    Moniteur VGA     │
+                                      │    640 × 480 px     │
+                                      └─────────────────────┘```
 
-### VGA Peripheral Registers
+### Modifications apportées à l'architecture de base
 
-The VGA peripheral is memory-mapped and controlled via these registers (accessible from C via the `VGA_t` struct):
+1. **Gestion Multi-Sprites** : 6 sprites gérés simultanément (Pac-Man, 3 fantômes, éléments de décor) via des PROMs et registres de coordonnées dédiés.
+2. **Moteur de Rendu (`VGA_Basic_ROM`)** : Priorité d'affichage `Sprite > Mur > Gomme > Fond`
+3. **Accélération Matérielle** : Les murs et les gommes sont générés directement par le matériel via une grille logique interne, sans surcharger le processeur.
+4. **Reset Hybride** : Le bit 31 du registre `background_color` déclenche un reset matériel des gommes depuis le logiciel.
 
-| Register           | Description                          |
-|--------------------|--------------------------------------|
-| `background_color` | Background / flash color control     |
-| `X1_pos`, `Y1_pos` | Pac-Man position                     |
-| `X2_pos`, `Y2_pos` | Ghost 1 (Blinky) position            |
-| `X3_pos`, `Y3_pos` | Ghost 2 (Pinky) position             |
-| `X4_pos`, `Y4_pos` | Win screen sprite position           |
-| `X5_pos`, `Y5_pos` | Game Over sprite position            |
-| `X6_pos`, `Y6_pos` | Ghost 3 (Clyde) position             |
+### Registres VGA (base : 0x11024000)
+
+| Registre           | Offset  | Description                      |
+|--------------------|---------|----------------------------------|
+| `background_color` | 0x00    | Couleur de fond / reset gommes   |
+| `X1_pos`, `Y1_pos` | 0x01/02 | Position Pac-Man                 |
+| `X2_pos`, `Y2_pos` | 0x03/04 | Position Fantôme 1               |
+| `X3_pos`, `Y3_pos` | 0x05/06 | Position Fantôme 2               |
+| `X4_pos`, `Y4_pos` | 0x07/08 | Sprite écran victoire            |
+| `X5_pos`, `Y5_pos` | 0x09/0A | Sprite Game Over                 |
+| `X6_pos`, `Y6_pos` | 0x0B/0C | Position Fantôme 3               |
 
 ---
 
-## Repository Structure
+## Architecture Logicielle
 
+Le logiciel est écrit en C et s'exécute sur le processeur IBEX. Il est structuré autour d'une **boucle de jeu infinie** :
+
+1. **Vérification de l'état** : victoire (toutes les gommes mangées) ou défaite (collision fantôme)
+2. **Physique du joueur** : lecture des boutons via GPIOC, calcul position, validation via `check_collision()`
+3. **Gestion des gommes** : incrémentation du score, désactivation de la gomme, affichage sur 7-segments
+4. **IA des fantômes** : à chaque intersection, scan des directions valides, choix aléatoire sans demi-tour
+5. **Rendu** : mise à jour des registres VGA
+
+### Contrôles (boutons poussoirs)
+
+| Bouton | Action    |
+|--------|-----------|
+| P0     | Monter    |
+| P3     | Descendre |
+| P1     | Gauche    |
+| P2     | Droite    |
+
+### Règles du jeu
+
+- Naviguer dans un labyrinthe de 20×15 tuiles
+- Collecter toutes les gommes pour **gagner**
+- Éviter les 3 fantômes — une collision déclenche le **Game Over** (flash rouge + restart)
+- Le tunnel à la ligne 7 permet le téléportation gauche ↔ droite
+
+---
+
+## Lien Logiciel / Matériel
+
+La communication entre C et VHDL repose sur la **mémoire mappée** via le bus AHB-Lite.
+
+### Exemple : Déplacement du fantôme n°2
+
+**1. Côté logiciel (C) :**
+```c
+VGA_PTR->X2_pos = ghost2.x;
+// VGA_PTR pointe sur 0x11024000
+// X2_pos = offset 0x03
+// → écriture de ghost2.x à l'adresse 0x11024003
+```
+
+**2. Bus AHB :** `HADDR=0x11024003`, `HWDATA=ghost2.x`, `HWRITE=1`
+
+**3. Côté matériel (`ahblite_vga.vhd`) :**
+```vhdl
+when x"03" => X2_pos <= SlaveIn.HWDATA;
+```
+Le registre `X2_pos` est lu par `VGA_Basic_ROM` à chaque rafraîchissement pour positionner le sprite.
+```
+Calcul C → Écriture Bus AHB → Registre VHDL → Affichage (60 Hz)
+```
+
+---
+
+## Structure du repo
 ```
 ICOBS-PacMan/
 │
@@ -89,131 +156,68 @@ ICOBS-PacMan/
 │
 ├── hardware/
 │   └── vhdl/
-│       ├── ahblite_vga.vhd          # AHB-Lite VGA peripheral (main custom IP)
-│       ├── VGA_640_x_480.vhd        # VGA timing controller (640x480 @ 60Hz)
-│       ├── VGA_Basic_ROM.vhd        # Sprite ROM (Pac-Man, ghosts, etc.)
-│       ├── VGA_Generic_Package.vhd  # Constants and types package
-│       └── ICOBS_light_PROJECT_DIR.xpr  # Vivado project file
+│       ├── VGA/                 # Contrôleur VGA (640x480, sprites, ROM)
+│       ├── AHBLITE/             # Périphériques AHB (VGA, GPIO, UART, Timer, 7SEG)
+│       ├── IBEX/                # Cœur processeur RISC-V IBEX + fichiers SHARED
+│       ├── MCU/                 # Interconnexion MCU (crossbar OBI→AHB)
+│       ├── OBI/                 # Bus OBI (arbitre, décodeur, ponts)
+│       ├── 7SEG/                # Afficheur 7 segments (score)
+│       ├── LIB/                 # Librairies VHDL (AMBA3, constantes)
+│       ├── ICOBS_light_TOP.vhd  # Top level du design
+│       └── Basys3-Master.xdc    # Contraintes FPGA (Basys3)
 │
 ├── software/
-│   └── demo-icobs-light-project/
-│       ├── src/
-│       │   ├── main.c               # Game logic (Pac-Man)
-│       │   └── system.h             # System configuration header
-│       ├── lib/
-│       │   ├── arch/                # Architecture-specific headers (GPIO, VGA, UART...)
-│       │   ├── libarch/             # Timer and UART drivers
-│       │   └── misc/                # Print, types utilities
-│       ├── makefile                 # Build system (RISC-V cross-compiler)
-│       ├── link.ld                  # Linker script
-│       └── crt0.S                   # Startup assembly
-│
-├── output/
-│   ├── ICOBS_light_TOP.bit          # FPGA bitstream (includes bootloader)
-│   └── demo-icobs-light.hex         # Compiled game executable
+│   ├── src/
+│   │   ├── main.c               # Logique du jeu Pac-Man
+│   │   └── system.h             # Configuration système
+│   ├── lib/
+│   │   ├── arch/                # Headers architecture (GPIO, VGA, UART...)
+│   │   ├── libarch/             # Drivers Timer et UART
+│   │   └── misc/                # Utilitaires (print, types)
+│   ├── output/                  # Fichiers compilés (.hex, .elf, .bin)
+│   ├── makefile                 # Système de build (cross-compiler RISC-V)
+│   ├── link.ld                  # Script linker
+│   └── crt0.S                   # Fichier de démarrage assembleur
 │
 └── docs/
-    └── rapport.pdf                  # Project report (hardware diagram, flowchart)
+    └── rapport.pdf              # Rapport du projet
 ```
 
 ---
 
-## Getting Started
+## Utilisation
 
-### Prerequisites
+### Prérequis
 
-- **Vivado** (for FPGA synthesis and bitstream generation)
+- **Vivado** (synthèse et génération du bitstream)
 - **RISC-V GCC toolchain** (`riscv32-unknown-elf-gcc`)
-- Compatible FPGA board (Nexys A7 / Basys 3 or equivalent)
-- VGA monitor
+- Carte FPGA **Basys3**
+- Moniteur VGA
 
-### 1. Program the FPGA
-
-Load the bitstream onto the FPGA using Vivado or `openFPGALoader`:
-
+### 1. Programmer le FPGA
 ```bash
 # Via Vivado Hardware Manager
 # Open hardware manager → Auto Connect → Program Device
-# Select: output/ICOBS_light_TOP.bit
+# Sélectionner : hardware/output/ICOBS_light_TOP.bit
 ```
 
-### 2. Build the Software
-
+### 2. Compiler le logiciel
 ```bash
-cd software/demo-icobs-light-project
-make
-# Output: output/demo-icobs-light.hex
+cd software
+make all
+# Sortie : output/demo-icobs-light.hex
 ```
 
-> To install the RISC-V toolchain: `bash install_riscv_toolchain.sh`
+> Pour installer la toolchain RISC-V : `source install_riscv_toolchain.sh`
 
-### 3. Load the Game
+### 3. Charger le jeu
 
-Use the bootloader (UART) to upload the `.hex` file to the board, then start the game.
-
----
-
-## Game Description
-
-The game is a Pac-Man clone adapted to the hardware constraints of the FPGA system.
-
-### Controls (Push Buttons)
-
-| Button | Action      |
-|--------|-------------|
-| P0     | Move Up     |
-| P3     | Move Down   |
-| P1     | Move Left   |
-| P2     | Move Right  |
-
-### Rules
-
-- Navigate Pac-Man through a 20×15 tile maze
-- Collect all dots to **win**
-- Avoid 3 ghosts — touching one triggers **Game Over** (red flash + restart)
-- Score is displayed in real-time on the **7-segment displays**
-- The tunnel at row 7 wraps around (left ↔ right teleport)
-
-### Ghost AI
-
-Each ghost navigates the maze autonomously using a grid-aligned movement system:
-- At each tile intersection, valid directions are computed (no walls)
-- A random direction is chosen, **avoiding U-turns** when alternatives exist
-- Fallback to U-turn only in dead ends
+Utiliser le bootloader (UART) pour envoyer `output/demo-icobs-light.hex` sur la carte.
 
 ---
 
-## Software / Hardware Interface
+## Auteur
 
-The link between software and hardware is done through **memory-mapped I/O** on the AHB-Lite bus.
-
-For example, to move Pac-Man to position (x=128, y=96):
-
-```c
-#define VGA_BASE 0x...          // Base address of VGA peripheral
-#define VGA_PTR  ((VGA_t *) VGA_BASE)
-
-VGA_PTR->X1_pos = 128;
-VGA_PTR->Y1_pos = 96;
-```
-
-The VHDL peripheral (`ahblite_vga.vhd`) exposes these registers on the AHB-Lite bus. A write to `X1_pos` from the C code triggers a bus transaction that updates the sprite position register in the FPGA, which is then read by the VGA controller on every frame to render the sprite at the correct pixel coordinates.
-
----
-
-## Deliverables
-
-| File | Description |
-|------|-------------|
-| `output/ICOBS_light_TOP.bit` | FPGA bitstream with bootloader |
-| `output/demo-icobs-light.hex` | Game executable |
-| `hardware/vhdl/*.vhd` | All custom/modified VHDL sources |
-| `software/demo-icobs-light-project/src/` | C source code |
-| `docs/rapport.pdf` | Project report |
-
----
-
-## Author
-
-**Tom Penfornis** — ENSIBS  
-ICOBS Project — 2025/2026
+**Tom Penfornis** — Polytech Montpellier  
+Synthèse des Systèmes Numériques — SE 2024-2027  
+Encadrant : Pascal Benoit
